@@ -33,4 +33,37 @@ public class AvaliacaoFisica {
 	private double peso;
 	@Column
 	private double altura;
+	
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	public Aluno getAluno() {
+		return aluno;
+	}
+	public void setAluno(Aluno aluno) {
+		this.aluno = aluno;
+	}
+	public Date getDataDaAvaliacao() {
+		return dataDaAvaliacao;
+	}
+	public void setDataDaAvaliacao(Date dataDaAvaliacao) {
+		this.dataDaAvaliacao = dataDaAvaliacao;
+	}
+	public double getPeso() {
+		return peso;
+	}
+	public void setPeso(double peso) {
+		this.peso = peso;
+	}
+	public double getAltura() {
+		return altura;
+	}
+	public void setAltura(double altura) {
+		this.altura = altura;
+	}
+	
+	
 }

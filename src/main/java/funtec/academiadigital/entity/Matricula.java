@@ -28,4 +28,24 @@ public class Matricula {
 	@JoinColumn (name = "aluno_id")
 	private Aluno aluno;
 	private Date dataDaMatricula;
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	public Aluno getAluno() {
+		return aluno;
+	}
+	public void setAluno(Aluno aluno) {
+		this.aluno = aluno;
+	}
+	public Date getDataDaMatricula() {
+		return dataDaMatricula;
+	}
+	public void setDataDaMatricula(Date dataDaMatricula) {
+		this.dataDaMatricula = dataDaMatricula;
+	}
+	
+	
 }

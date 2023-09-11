@@ -13,16 +13,14 @@ public class AlunoServiceImpl implements IAlunosService{
 	
 	@Autowired
 	private AlunoRepository repository;
-
-	@Override  public Aluno create(AlunoForm form) {    
-		return null;  
-	} 
 	 
-	 @Override  public Aluno get(Long id) {    
+	 @Override  
+	 public Aluno get(Long id) {    
 		 return null;  
 	 } 
 	 
-	 @Override  public List<Aluno> getAll() {     
+	 @Override  
+	 public List<Aluno> getAll() {     
 		 return repository.findAll();  
 	 } 
 	 
@@ -32,5 +30,15 @@ public class AlunoServiceImpl implements IAlunosService{
 	 
 	 @Override  public void delete(Long id) {      
 		 
+	 }
+	 
+	 @Override
+	 public Aluno create (AlunoForm form) {
+		 Aluno aluno = new Aluno();
+		 aluno.setNome(form.getNome());
+		 aluno.setCpf(form.getCpf());     
+		 aluno.setBairro(form.getBairro());     
+		 aluno.setDataNascimento(form.getDataNascimento());
+		 return repository.save(aluno);
 	 }
 }
